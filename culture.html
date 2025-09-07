@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Culture | Jharkhand</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <script>
+    if (!localStorage.getItem("token")) {
+      window.location.href = "login.html";
+    }
+  </script>
+
+  <header>
+    <div class="logo">🌿 Jharkhand</div>
+    <nav>
+      <a href="tourism.html">Tourism</a>
+      <a href="#" onclick="logout()">Logout</a>
+    </nav>
+  </header>
+
+  <section class="content">
+    <h2>Jharkhand Culture</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="images/festival.jpg" alt="Festival">
+        <h3>Sarhul Festival</h3>
+        <p>Celebrate the festival of nature with tribal communities.</p>
+      </div>
+      <div class="card">
+        <img src="images/dance.jpg" alt="Dance">
+        <h3>Chhau Dance</h3>
+        <p>Traditional martial dance from Jharkhand villages.</p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function logout() {
+      localStorage.removeItem("token");
+      window.location.href = "index.html";
+    }
+  </script>
+</body>
+</html>
